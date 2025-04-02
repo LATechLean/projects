@@ -74,7 +74,7 @@ insert x (cons a as) = cons a (insert x as)</c>
 	<p>
 	  You will need to implement <c>insertionSort</c>
 	  <cd>def insertionSort (as : List α) : List α </cd>
-	  recursively and then prove that actually sorts a list.
+	  recursively and then prove that it actually sorts a list.
 	  <ul>
 	    <li>
 	      <p>
