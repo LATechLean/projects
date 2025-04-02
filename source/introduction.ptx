@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<introduction xml:id="intro" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <p>
-    For the midterm project, you will work in a small group to formalize and prove a result in Lean.
-    Below are two project options.
-    Each project will require you to write formalize precise definitions and prove supporting lemmas to complete a central proof.
-  </p>
+<section xml:id="section-intro" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Introduction</title>
+  <introduction>
+    <p>
+      For the midterm project, you will work in a small group to formalize and prove a result in Lean.
+      Below are two project options.
+      Each project will require you to formalize precise definitions and prove supporting lemmas to complete a central proof.
+    </p>
 
-  <p>
-    Your project will be graded on correctness, clarity, Lean style, and collaboration.
-    Choose one option and submit your choice by April 4.
-  </p>
-</introduction>
+    <p>
+      Your project will be graded on correctness, clarity, Lean style, and collaboration.
+      Choose one option and submit your choice by April 4.
+    </p>
+  </introduction>
+</section>
