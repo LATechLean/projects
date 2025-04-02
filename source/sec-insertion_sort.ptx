@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='utf-8'?>
+<section xml:id="sec-insertion_sort">
+      <title>Insertion Sort</title>
+      <introduction>
+	<p>
+	  This project will guide you through some of the key portions of proving the correctness of the <c>insertionSort</c> algorithm.
+	  Along the way, you will hone the following skills
+	  <ul>
+	    <li>
+	      <p>
+		Defining <term>recursive</term> functions,
+	      </p>
+	    </li>
+	    <li>
+	      <p>
+		Pattern matching on <term>inductive types</term>, and
+	      </p>
+	    </li>
+	    <li>
+	      <p>
+		Writing proofs by <term>induction</term>.
+	      </p>
+	    </li>
+	  </ul>
+	  In the class <url href="https://github.com/LATechLean/ITPLxS25">GitHub repository</url>, you will find a folder named <c>projects</c> and within it a file <c>insertionSort.lean</c> that provides a code stub to get you started.
+	</p>
+      </introduction>
+
+      <subsection xml:id="subsec-insertion_sort_definitions">
+	<title>Definitions</title>
+	<p>
+	  You are given the following definition for <c>sorted</c>
+	</p>
+	<program language="lean">
+	    <code>
+	      inductive sorted {α : Type u} [LinearOrder α] : List α → Prop
+	      | nil : sorted nil
+	      | singleton (a : α) : sorted (cons a nil)
+	      | cons (a b : α) (as : List α) (a_le_b : a ≤ b)
+	      (h_sorted : sorted (cons b as))
+	        : sorted (cons a (cons b as))
+	    </code>
+	</program>
+
+	<p>
+	  You will need to provide a definition of <c>insert</c>,
+	  <cd>def insert (x : α) (as : List α): List α</cd>
+	</p>
+      </subsection>
+
+      <subsection xml:id="subsec-insertion_sort_results">
+	<title>Basic Results</title>
+	<p>
+	  Once you have decided on a definition for insert, you should test your definition by proving the following basic results:
+	  <ul>
+	    <li>
+	      <p>
+		<c>lemma insert_cons_le (x a : α) (as : List α) (h : x ≤ a) :
+insert x (cons a as) = cons x (cons a as)</c>
+	      </p>
+	    </li>
+	    <li>
+	      <p>
+		<c>lemma insert_cons_nle (x a : α) (as : List α) (h : ¬ (x ≤ a)) :
+insert x (cons a as) = cons a (insert x as)</c>
+	      </p>
+	    </li>
+	  </ul>
+	</p>
+      </subsection>
+
+      <subsection xml:id="subsec-insertion_sort_main_results">
+	<title>Main Results</title>
+	<p>
+	  You will need to implement <c>insertionSort</c>
+	  <cd>def insertionSort (as : List α) : List α </cd>
+	  recursively and then prove that actually sorts a list.
+	  <ul>
+	    <li>
+	      <p>
+		<c>theorem insert_preserves_sorted (a : α) (as : List α) (h : sorted as) :
+sorted (insert a as)</c>
+	      </p>
+	    </li>
+	    <li>
+	      <p>
+		<c>theorem sort_sorts (as : List α) : sorted (insertionSort as)</c>
+	      </p>
+	    </li>
+	  </ul>
+	</p>
+      </subsection>
+    </section>

@@ -1,0 +1,132 @@
+<?xml version='1.0' encoding='utf-8'?>
+<section xml:id="sec-natural_numbers">
+  <title>Constructing The Natural Numbers</title>
+  <introduction>
+    <p>
+      This project will guide you through some of the key portions of the construction of the natural numbers.
+      Along the way, you will hone the following skills
+      <ul>
+	<li>
+	  <p>
+	    Defining <term>recursive</term> functions,
+	  </p>
+	</li>
+	<li>
+	  <p>
+	    Pattern matching on <term>inductive types</term>, and
+	  </p>
+	</li>
+	<li>
+	  <p>
+	    Writing proofs by <term>induction</term>.
+	  </p>
+	</li>
+      </ul>
+      In the class <url href="https://github.com/LATechLean/ITPLxS25">GitHub repository</url>, you will find a folder named <c>projects</c> and within it a file <c>nat.lean</c> that provides a code stub to get you started.
+    </p>
+  </introduction>
+
+  <subsection xml:id="subsec-nat_definitions">
+    <title>Definitions</title>
+    <p>
+      You are given the following definition for addition
+    </p>
+    <program language="lean">
+      <code>
+	def add (m n : Nat) : Nat :=
+	match m with
+	| zero => n
+	| succ m => Nat.succ (add m n)
+      </code>
+    </program>
+
+    <p>
+      You will need to provide a recursive definition of multiplication
+      <cd>def mul (m n : Nat) : Nat := sorry</cd>
+    </p>
+    <warning>
+      <p>
+	As with addition, you must choose which slot to use in the <c>match</c> statement.
+	The choice you make will determine how you structure your <c>induction</c>, and may require you to tweak the order of the statements below.
+      </p>
+    </warning>
+  </subsection>
+
+  <subsection xml:id="subsec-nat_basic_results">
+    <title>Basic Results</title>
+    <p>
+      Once you have decided on a definition for multiplication, you should test your definition by proving the following familiar results:
+      <ul>
+	<li>
+	  <p>
+	    <c>theorem zero_mul (n: Nat) : zero * n = zero</c>
+	  </p>
+	</li>
+	<li>
+	  <p>
+	    <c>theorem mul_zero (m : Nat) : m * zero = zero</c>
+	  </p>
+	</li>
+	<li>
+	  <p>
+	    <c>theorem one_mul (n : Nat) : one * n = n</c>
+	  </p>
+	</li>
+	<li>
+	  <p>
+	    <c>theorem mul_one (m : Nat) : m * one = m</c>
+	  </p>
+	</li>
+	<li>
+	  <p>
+	    <c>theorem two_mul (n : Nat) : two * n = n + n</c>
+	  </p>
+	</li>
+	<li>
+	  <p>
+	    <c>theorem mul_two (m : Nat) : m * two = m + m</c>
+	  </p>
+	</li>
+      </ul>
+    </p>
+  </subsection>
+
+  <subsection xml:id="subsec-nat_properties">
+    <title>Properties of Multiplication</title>
+    <p>
+      Once you have established that your multiplication works for the simple examples above, you will prove the following general properties for multiplication.
+      <ul>
+	<li>
+	  <p>
+	    <c>theorem succ_mul (m n : Nat) : (succ m) * n = n + (m * n)</c>
+	  </p>
+	</li>
+	<li>
+	  <p>
+	    <c>theorem mul_succ (m n : Nat) : m * (succ n) = m + m*n</c>
+	  </p>
+	</li>
+	<li>
+	  <p>
+	    <c>theorem mul_comm (m n : Nat) : m * n = n * m</c>
+	  </p>
+	</li>
+	<li>
+	  <p>
+	    <c>theorem distrib_right (m n k : Nat) : (m + n) * k = m*k + n*k</c>
+	  </p>
+	</li>
+	<li>
+	  <p>
+	    <c>theorem distrib_left (m n k : Nat) : m * (n + k) = m * n + m * k</c>
+	  </p>
+	</li>
+	<li>
+	  <p>
+	    <c>theorem mul_assoc (m n k : Nat) : (m * n) * k = m * (n * k)</c>
+	  </p>
+	</li>
+      </ul>
+    </p>
+  </subsection>
+</section>

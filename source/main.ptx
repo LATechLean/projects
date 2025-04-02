@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<pretext xml:lang="en-US" xmlns:xi="http://www.w3.org/2001/XInclude">
+
+  <docinfo>
+
+    <document-id>authorslastnamelowercase-ShortTitleCamelCase</document-id>
+
+    <macros>\newcommand{\foo}{b^{ar}}</macros>
+    <latex-image-preamble>\usepackage{tikz}</latex-image-preamble>
+  </docinfo>
+
+  <article xml:id="shorttitlelowercase">
+    <title>Midterm Projects</title>
+    <subtitle>Interactive Theorem Proving with Lean</subtitle>
+
+    <xi:include href="./frontmatter.ptx" />
+    
+    <xi:include href="./introduction.ptx" />
+
+    <xi:include href="./sec-nat.ptx"/>
+    <xi:include href="./sec-insertion_sort.ptx"/>
+    
+  </article>
+
+</pretext>

@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<locatingRules xmlns="http://thaiopensource.com/ns/locating-rules/1.0">
+  <uri resource="sec-insertion_sort.ptx" uri="../../../../pretext/schema/pretext.rnc"/>
+  <uri resource="sec-nat.ptx" uri="../../../../pretext/schema/pretext.rnc"/>
+  <uri resource="section-1.ptx" uri="../../../../pretext/schema/pretext.rnc"/>
+  <uri resource="frontmatter.ptx" uri="../../../../pretext/schema/pretext.rnc"/>
+</locatingRules>
