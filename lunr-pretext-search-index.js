@@ -7,7 +7,7 @@ var ptx_lunr_docs = [
   "type": "Front Matter",
   "number": "",
   "title": "Front Matter",
-  "body": "  Blake Farman        "
+  "body": "  Blake Farman    For the midterm project, you will work in a small group to formalize and prove a result in Lean. Below are two project options. Each project will require you to formalize precise definitions and prove supporting lemmas to complete a central proof.  Your project will be graded on correctness, clarity, Lean style, and collaboration. Choose one option and submit your choice by April 4.   "
 },
 {
   "id": "section-intro",
