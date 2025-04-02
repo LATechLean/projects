@@ -2,7 +2,7 @@
 <introduction xml:id="intro" xmlns:xi="http://www.w3.org/2001/XInclude">
   <p>
     For the midterm project, you will work in a small group to formalize and prove a result in Lean.
-    Below are five project options.
+    Below are two project options.
     Each project will require you to write formalize precise definitions and prove supporting lemmas to complete a central proof.
   </p>
 
