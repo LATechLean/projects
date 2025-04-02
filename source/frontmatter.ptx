@@ -1,15 +1,12 @@
-
+<?xml version='1.0' encoding='utf-8'?>
 <frontmatter>
-<bibinfo>
-<author>
-<personname>Blake Farman</personname>
-</author>
-</bibinfo>
+  <bibinfo>
+    <author>
+      <personname>Blake Farman</personname>
+    </author>
+  </bibinfo>
 
-<!-- <abstract> -->
-<!-- <p> -->
-<!-- This is the abstract. -->
-<!-- </p> -->
-<!-- </abstract> -->
+  <!-- <abstract> -->
+  <!-- </abstract> -->
 </frontmatter>
 
