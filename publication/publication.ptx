@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <publication>
-    <!-- directories are relative to the main source PreTeXt file -->
-    <source>
-        <directories external="../assets" generated="../generated-assets"/>
-    </source>
+  <!-- directories are relative to the main source PreTeXt file -->
+  <source>
+    <directories external="../assets" generated="../generated-assets"/>
+  </source>
+  <html>
+    <css theme="boulder" primary-color="#0A3254" primary-color-dark="#69B3E7"/>
+  </html>
 </publication>

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<section xml:id="section-intro" xmlns:xi="http://www.w3.org/2001/XInclude">
+<section xml:id="section-introduction" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Introduction</title>
-  <introduction>
     <p>
       For the midterm project, you will work in a small group to formalize and prove a result in Lean.
       Below are two project options.
@@ -12,5 +11,4 @@
       Your project will be graded on correctness, clarity, Lean style, and collaboration.
       Choose one option and submit your choice by April 4.
     </p>
-  </introduction>
 </section>
